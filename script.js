@@ -58,3 +58,10 @@ Do not use tables or markdown. Use plain text with line breaks.`;
     itineraryDiv.innerHTML = "❌ Error generating itinerary.";
   }
 });
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-ERPM0F9H8X');
