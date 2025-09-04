@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+#planner input, #planner button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#planner button {
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+#planner button:hover {
+  background: #45a049;
+}
+
+#results, #mapSection {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+#itinerary {
+  text-align: left;
+  margin-top: 10px;
+  line-height: 1.6;
+}
