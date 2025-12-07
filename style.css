@@ -1,48 +1,94 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
+/* BODY */
 body {
-  background: #f4f4f9;
+  background: linear-gradient(to bottom right, #e8f0ff, #f7f9ff);
   color: #333;
-  text-align: center;
   padding: 20px;
+  text-align: center;
 }
 
-header {
-  margin-bottom: 20px;
+/* HEADER */
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
 }
 
-#planner input, #planner button {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 8px;
+/* FORM SECTION */
+#planner {
+  max-width: 450px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#planner input {
+  padding: 14px;
+  border-radius: 10px;
   border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
 #planner button {
+  padding: 14px;
   background: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #planner button:hover {
-  background: #45a049;
+  background: #3b8d40;
+  transform: scale(1.02);
 }
 
-#results, #mapSection {
-  margin-top: 20px;
-  padding: 15px;
+/* RESULTS + MAP CARD STYLE */
+#results,
+#mapSection {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  border-radius: 14px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
+#results h2,
+#mapSection h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* ITINERARY TEXT */
 #itinerary {
-  text-align: left;
-  margin-top: 10px;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  #planner {
+    padding: 20px;
+  }
 }
